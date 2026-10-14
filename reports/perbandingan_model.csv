@@ -1,0 +1,5 @@
+,cv_roc_auc_train,threshold,accuracy,precision,recall,f2,roc_auc,pr_auc
+Baseline (majority),0.5,0.5,0.614,0.0,0.0,0.0,0.5,0.386
+Logistic Regression,0.801,0.29,0.602,0.492,0.921,0.784,0.787,0.721
+Decision Tree,0.767,0.2,0.548,0.459,0.947,0.781,0.775,0.652
+Random Forest,0.791,0.14,0.503,0.435,0.965,0.776,0.785,0.704

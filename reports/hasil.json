@@ -1,0 +1,112 @@
+{
+  "kualitas_data_sebelum": {
+    "jumlah_baris": 1815,
+    "duplikat": 15,
+    "missing_per_kolom": {
+      "ips_s2": 40,
+      "nilai_basis_data": 25
+    },
+    "ips_di_luar_0_4": 6,
+    "huruf_mutu_tidak_baku": 61
+  },
+  "kualitas_data_sesudah": {
+    "jumlah_baris": 1800,
+    "duplikat": 0,
+    "missing_per_kolom": {
+      "ips_s2": 40,
+      "ips_s3": 6,
+      "nilai_basis_data": 25
+    },
+    "ips_di_luar_0_4": 0,
+    "huruf_mutu_tidak_baku": 0
+  },
+  "kolom_bocor_dibuang": [
+    "lama_studi_semester",
+    "ipk_akhir",
+    "status_yudisium",
+    "ips_s5",
+    "sks_ambil_s5",
+    "ips_s6",
+    "sks_ambil_s6",
+    "ips_s7",
+    "sks_ambil_s7",
+    "ips_s8",
+    "sks_ambil_s8"
+  ],
+  "ukuran": {
+    "train": 1209,
+    "test": 591,
+    "rasio_terlambat_train": 0.383,
+    "rasio_terlambat_test": 0.386
+  },
+  "model_terbaik": "Logistic Regression",
+  "hasil": {
+    "Baseline (majority)": {
+      "cv_roc_auc_train": 0.5,
+      "threshold": 0.5,
+      "accuracy": 0.6142131979695431,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f2": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.38578680203045684
+    },
+    "Logistic Regression": {
+      "cv_roc_auc_train": 0.8013856478613078,
+      "threshold": 0.29,
+      "accuracy": 0.6023688663282571,
+      "precision": 0.4918032786885246,
+      "recall": 0.9210526315789473,
+      "f2": 0.784167289021658,
+      "roc_auc": 0.7868759363974676,
+      "pr_auc": 0.721268986206784
+    },
+    "Decision Tree": {
+      "cv_roc_auc_train": 0.7672786177105831,
+      "threshold": 0.2,
+      "accuracy": 0.5482233502538071,
+      "precision": 0.4585987261146497,
+      "recall": 0.9473684210526315,
+      "f2": 0.7809110629067245,
+      "roc_auc": 0.774793388429752,
+      "pr_auc": 0.6518811076706739
+    },
+    "Random Forest": {
+      "cv_roc_auc_train": 0.7906241495318445,
+      "threshold": 0.14,
+      "accuracy": 0.5025380710659898,
+      "precision": 0.43478260869565216,
+      "recall": 0.9649122807017544,
+      "f2": 0.7757404795486601,
+      "roc_auc": 0.7848339857909236,
+      "pr_auc": 0.7039647360628334
+    }
+  },
+  "classification_report_terbaik": {
+    "Tepat waktu": {
+      "precision": 0.8902439024390244,
+      "recall": 0.4022038567493113,
+      "f1-score": 0.5540796963946869,
+      "support": 363.0
+    },
+    "Terlambat": {
+      "precision": 0.4918032786885246,
+      "recall": 0.9210526315789473,
+      "f1-score": 0.6412213740458015,
+      "support": 228.0
+    },
+    "accuracy": 0.6023688663282571,
+    "macro avg": {
+      "precision": 0.6910235905637745,
+      "recall": 0.6616282441641294,
+      "f1-score": 0.5976505352202441,
+      "support": 591.0
+    },
+    "weighted avg": {
+      "precision": 0.7365307684032986,
+      "recall": 0.6023688663282571,
+      "f1-score": 0.5876978055392793,
+      "support": 591.0
+    }
+  }
+}
