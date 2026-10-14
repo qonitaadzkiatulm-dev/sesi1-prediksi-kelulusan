@@ -1,3 +1,8 @@
+
+| **Nama** | Qonita Adzkiatul Mardiyah |
+|---|---|
+| **NPM** | G1A023086 |
+
 # Prediksi Kelulusan Mahasiswa
 
 Studi kasus berbasis kuliah praktisi **"Make Sense of Data with Analysis and AI"**
